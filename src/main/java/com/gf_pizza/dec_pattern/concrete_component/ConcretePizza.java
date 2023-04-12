@@ -21,7 +21,7 @@ public class ConcretePizza extends Consummation {
 
 	@Override
 	public String toString() {
-		return "[name=" + name + ", Price=" + String.format("%.2f", this.getPrice()) + "€ ]";
+		return "Pizza [name=" + name + ", kcal=" + this.getKcal() + ", Price=" + String.format("%.2f", this.getPrice()) + "€ ]";
 	}
 
 	

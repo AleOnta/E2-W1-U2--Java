@@ -29,7 +29,7 @@ public class ConcreteDrink extends Consummation {
 	}
 
 	public String toString() {
-		return "[name="+ name + ", price="+ String.format("%.2f", this.getPrice()) + "€]";
+		return "Drink [name="+ name + ", kcal=" + this.getKcal() + ", price=" + String.format("%.2f", this.getPrice()) + "€]";
 	}
 	
 }

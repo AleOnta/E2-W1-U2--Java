@@ -44,11 +44,21 @@ public class Order {
 		total += this.calculateCoversCosts();
 		return total;
 	}
+	
+	public String consToString() {
+		int count = 1;
+		String toReturn = "";
+		for (Consummation c : consList) {
+			toReturn += count + " - " + c.toString() + "\n"; 
+			count++;
+		}
+		return toReturn;
+	}
 
 	@Override
 	public String toString() {
-		return "Order [orderId=" + orderId + ", tableId=" + tableId + ", covers=" + covers + ", status=" + status
-				+ ", consList=" + consList + ", totAmount=" + String.format("%.2f", this.getTotalAmount()) + "€]";
+		return "Order --> orderId=" + orderId + ", tableId=" + tableId + ", covers=" + covers + ", status=" + status
+				+ ", totAmount=" + String.format("%.2f", this.getTotalAmount()) + "€, \nProducts ordered: \n" + consToString();
 	}
 	
 	

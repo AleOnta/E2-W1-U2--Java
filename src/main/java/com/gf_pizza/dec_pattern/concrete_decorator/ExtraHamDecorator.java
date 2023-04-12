@@ -25,7 +25,7 @@ public class ExtraHamDecorator extends ExtraAdditionDecorator {
 	}
 
 	public String toString() {
-		return "[name=" + this.getName() + ", Price=" + String.format("%.2f", this.getPrice()) + "€ ]";
+		return "Pizza [name=" + this.getName() + ", kcal=" + this.getKcal() + ", Price=" + String.format("%.2f", this.getPrice()) + "€ ]";
 	}
 	
 }
